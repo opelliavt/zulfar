@@ -1,3 +1,6 @@
+import heroFloralBg from '../assets/images/wedding_floral_bg_1790340695740.jpg';
+import weddingSong from '../assets/audio/akad_payuh-teduh.mp3';
+
 export interface WeddingEvent {
   title: string;
   subTitle: string;
@@ -55,16 +58,17 @@ export const WEDDING_DATA = {
       parentInfo: 'Putri dari Bpk. Sujud Hariyono',
       instagram: 'https://instagram.com',
     },
-    heroImage: '/src/assets/images/wedding_floral_bg_1790340695740.jpg',
+    heroImage: heroFloralBg,
     quote: '"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."',
     quoteSource: 'QS. Ar-Rum: 21',
   },
 
   audio: {
-    url: '/audio/akad_payuh-teduh.mp3', 
-    title: 'Akad - Payung Teduh',
+    // Kidung Wahyu Kolosebo (Format MP3 resolusi jernih 128kbps, full version)
+    url: weddingSong,
+    title: 'Kidung Wahyu Kolosebo',
   },
-  
+
   dateTime: {
     targetDateIso: '2026-10-14T08:00:00+07:00', // Rabu, 14 Oktober 2026
     dayName: 'Rabu',
