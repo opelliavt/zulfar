@@ -20,6 +20,35 @@ import { FooterSection } from './components/FooterSection';
 export default function App() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
   const [guestName, setGuestName] = useState('Tamu Undangan');
+  const [currentPath, setCurrentPath] = useState(() => {
+    return typeof window !== 'undefined' ? window.location.pathname.toLowerCase().replace(/\/+$/, '') : '';
+  });
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      setCurrentPath(window.location.pathname.toLowerCase().replace(/\/+$/, ''));
+    };
+    window.addEventListener('popstate', handleLocationChange);
+    return () => window.removeEventListener('popstate', handleLocationChange);
+  }, []);
+
+  const isZulfarNataliaRoute = currentPath === '/zulfarnatalia' || currentPath.startsWith('/zulfarnatalia/');
+
+  // In development / preview environments (localhost or run.app), always show invitation
+  const isDevOrPreview = typeof window !== 'undefined' && 
+    (window.location.hostname === 'localhost' || 
+     window.location.hostname === '127.0.0.1' || 
+     window.location.hostname.includes('run.app'));
+
+  const shouldRenderInvitation = isZulfarNataliaRoute || isDevOrPreview;
+
+  useEffect(() => {
+    if (!shouldRenderInvitation) {
+      document.title = 'nikahdulu.my.id';
+    } else {
+      document.title = 'The Wedding of Zulfar & Natalia - Undangan Digital';
+    }
+  }, [shouldRenderInvitation]);
 
   // Read guest name from query param (e.g., ?to=Bapak+Budi+%26+Keluarga)
   useEffect(() => {
@@ -132,6 +161,10 @@ export default function App() {
       rsvpElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  if (!shouldRenderInvitation) {
+    return <div className="min-h-screen bg-white" />;
+  }
 
   return (
     <div className="min-h-screen bg-[#FAF7F2] text-[#2C2724] relative selection:bg-[#E8D8C8] selection:text-[#5C3D2E]">
