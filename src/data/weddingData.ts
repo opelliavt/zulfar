@@ -61,10 +61,9 @@ export const WEDDING_DATA = {
   },
 
   audio: {
-    // Masukkan URL link MP3 lagu pilihan Anda di sini (misal dari Google Drive/hosting/CDN/cloud)
-    // Jika dibiarkan kosong (''), sistem otomatis memainkan alunan piano akustik romantis bawaan.
-    url: '', 
-    title: 'Melodi Romantis Pernikahan',
+    // Kidung Wahyu Kolosebo (Format MP3 resolusi jernih 128kbps, full version)
+    url: '/audio/kidung-wahyu-kolosebo.mp3', 
+    title: 'Kidung Wahyu Kolosebo',
   },
   
   dateTime: {
