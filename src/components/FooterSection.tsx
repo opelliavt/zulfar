@@ -8,9 +8,12 @@ export const FooterSection: React.FC = () => {
   const [copiedLink, setCopiedLink] = useState(false);
 
   const getGeneratedUrl = () => {
-    const origin = typeof window !== 'undefined' ? window.location.origin + window.location.pathname : '';
-    if (!customGuestName.trim()) return origin;
-    return `${origin}?to=${encodeURIComponent(customGuestName.trim())}`;
+    if (typeof window === 'undefined') return '';
+    const cleanPath = window.location.pathname.replace(/\/+$/, '');
+    const pathWithSlug = cleanPath.includes('/zulfarnatalia') ? cleanPath : '/zulfarnatalia';
+    const baseUrl = `${window.location.origin}${pathWithSlug}`;
+    if (!customGuestName.trim()) return baseUrl;
+    return `${baseUrl}?to=${encodeURIComponent(customGuestName.trim())}`;
   };
 
   const handleCopyLink = () => {
