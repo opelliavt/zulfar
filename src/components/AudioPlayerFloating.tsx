@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Play, Pause, Volume2, VolumeX, Music } from 'lucide-react';
 import { romanticAudio } from '../utils/audioPlayer';
+import { WEDDING_DATA } from '../data/weddingData';
 
 export const AudioPlayerFloating: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,7 +37,7 @@ export const AudioPlayerFloating: React.FC = () => {
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1F1916]/90 text-[#FAF7F2] text-xs shadow-md border border-[#D4AF37]/30 backdrop-blur-md animate-fade-in">
           <Music className="w-3.5 h-3.5 text-[#D4AF37]" />
-          <span>Canon in D · Acoustic Piano</span>
+          <span>{WEDDING_DATA.audio.title || 'Melodi Romantis Pernikahan'}</span>
           <button
             onClick={handleToggleMute}
             className="p-1 hover:text-[#D4AF37] transition-colors"
