@@ -48,7 +48,8 @@ export const WEDDING_DATA = {
       initial: 'Z',
       father: 'Bpk. Zaenudin Luthfie',
       parentInfo: 'Putra dari Bpk. Zaenudin Luthfie',
-      instagram: 'https://instagram.com',
+      instagram: 'zulfarmushoffa',
+      instagramUrl: 'https://instagram.com/zulfarmushoffa',
     },
     bride: {
       fullName: 'Natalia Mega Selvi',
@@ -56,7 +57,8 @@ export const WEDDING_DATA = {
       initial: 'N',
       father: 'Bpk. Sujud Hariyono',
       parentInfo: 'Putri dari Bpk. Sujud Hariyono',
-      instagram: 'https://instagram.com',
+      instagram: 'nataliamegaselvi',
+      instagramUrl: 'https://instagram.com/nataliamegaselvi',
     },
     heroImage: heroFloralBg,
     quote: '"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."',
@@ -64,10 +66,10 @@ export const WEDDING_DATA = {
   },
 
   audio: {
-    url: weddingSong,
-    title: 'Akad - Payung Teduh',
+    url: weddingSong, 
+    title: 'Kidung Wahyu Kolosebo',
   },
-
+  
   dateTime: {
     targetDateIso: '2026-10-14T08:00:00+07:00', // Rabu, 14 Oktober 2026
     dayName: 'Rabu',
@@ -85,7 +87,7 @@ export const WEDDING_DATA = {
       address: 'RT 03 RW 02, Dusun Ngampel, Desa Doroampel, Kec. Sumbergempol, Kab. Tulungagung, Jawa Timur 66291',
       mapEmbedUrl: 'https://maps.google.com/maps?q=Doroampel,+Sumbergempol,+Tulungagung,+Jawa+Timur&t=&z=15&ie=UTF8&iwloc=&output=embed',
       mapDirectionUrl: 'https://maps.google.com/?q=Dusun+Ngampel,+Desa+Doroampel,+Kec.+Sumbergempol,+Kab.+Tulungagung',
-      notes: 'Khusus keluarga besar dan kerabat terdekat'
+      notes: 'Keluarga besar dan kerabat terdekat'
     },
     {
       title: 'Resepsi Pernikahan',
@@ -126,15 +128,15 @@ export const WEDDING_DATA = {
   initialWishes: [
     {
       id: 'w-1',
-      name: 'Keluarga Besar Bpk. Ahmad',
+      name: 'Keluarga Besar Bpk. Junaidi Sujiroh',
       attendance: 'hadir',
       message: 'Barakallahu lakuma wa baraka alaikuma wa jama\'a bainakuma fii khair. Selamat menempuh hidup baru untuk Zulfar & Natalia.',
       date: 'Baru saja',
-      likes: 12
+      likes: 1294
     },
     {
       id: 'w-2',
-      name: 'Sahabat Tulungagung',
+      name: 'Salman Al Farisi',
       attendance: 'hadir',
       message: 'Semoga menjadi keluarga yang sakinah, mawaddah, warahmah, serta senantiasa dalam limpahan berkah Allah SWT.',
       date: '2 jam lalu',
@@ -142,7 +144,7 @@ export const WEDDING_DATA = {
     },
     {
       id: 'w-3',
-      name: 'Keluarga Sumbergempol',
+      name: 'Rizal Kia Rifai',
       attendance: 'hadir',
       message: 'Selamat menempuh hidup baru untuk Zulfar & Natalia. Semoga senantiasa rukun, harmonis, dan bahagia hingga akhir hayat.',
       date: 'Kemarin',

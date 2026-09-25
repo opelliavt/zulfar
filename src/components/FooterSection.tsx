@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Share2, Copy, Check, MessageCircle, ExternalLink } from 'lucide-react';
+import { Heart, Share2, Copy, Check, MessageCircle, ExternalLink, Instagram } from 'lucide-react';
 import { WEDDING_DATA } from '../data/weddingData';
 
 export const FooterSection: React.FC = () => {
@@ -98,11 +98,29 @@ export const FooterSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Quiet Minimalist Footnote */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs text-[#8C7A6D] pt-4">
-          <span>The Wedding of {WEDDING_DATA.couple.groom.callName} &amp; {WEDDING_DATA.couple.bride.callName} · 2026</span>
-          <span className="hidden sm:inline">·</span>
-          <span>Dibuat dengan cinta &amp; doa restu</span>
+        {/* Quiet Minimalist Footnote & Creator Credits */}
+        <div className="flex flex-col items-center justify-center gap-3 pt-6 border-t border-[#FAF7F2]/10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs text-[#A6978A]">
+            <span>The Wedding of {WEDDING_DATA.couple.groom.callName} &amp; {WEDDING_DATA.couple.bride.callName} · 2026</span>
+            <span className="hidden sm:inline">·</span>
+            <span>Dibuat dengan cinta &amp; doa restu</span>
+          </div>
+
+          {/* Credits: Irham Ibrohim */}
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A1412] border border-[#D4AF37]/30 text-xs shadow-sm">
+            <span className="text-[#C2B2A3]">Crafted with passion by</span>
+            <span className="font-semibold text-[#DFBF6A]">Irham Ibrohim</span>
+            <span className="text-[#6B574B]">|</span>
+            <a
+              href="https://instagram.com/irhamibra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[#DFBF6A] hover:text-[#FFFDF9] font-medium transition-colors group"
+            >
+              <Instagram className="w-3.5 h-3.5 text-[#E1306C] group-hover:scale-110 transition-transform" />
+              <span>@irhamibra</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

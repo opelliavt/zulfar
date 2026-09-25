@@ -16,6 +16,7 @@ import { RsvpSection } from './components/RsvpSection';
 import { GuestbookSection } from './components/GuestbookSection';
 import { DigitalGiftSection } from './components/DigitalGiftSection';
 import { FooterSection } from './components/FooterSection';
+import { RomanticPetals } from './components/RomanticPetals';
 
 export default function App() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
@@ -178,6 +179,9 @@ export default function App() {
       {/* Main Website Structure */}
       {isEnvelopeOpen && (
         <div className="animate-fade-in transition-opacity duration-700">
+          {/* Romantic Floating Flower Petals Animation */}
+          <RomanticPetals />
+
           {/* Top Bar Navigation */}
           <Navbar onOpenRsvp={handleOpenRsvpScroll} />
 
