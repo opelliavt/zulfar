@@ -59,6 +59,13 @@ export const WEDDING_DATA = {
     quote: '"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."',
     quoteSource: 'QS. Ar-Rum: 21',
   },
+
+  audio: {
+    // Masukkan URL link MP3 lagu pilihan Anda di sini (misal dari Google Drive/hosting/CDN/cloud)
+    // Jika dibiarkan kosong (''), sistem otomatis memainkan alunan piano akustik romantis bawaan.
+    url: '', 
+    title: 'Melodi Romantis Pernikahan',
+  },
   
   dateTime: {
     targetDateIso: '2026-10-14T08:00:00+07:00', // Rabu, 14 Oktober 2026
