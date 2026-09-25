@@ -1,12 +1,31 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import fs from 'fs';
+import {defineConfig, Plugin} from 'vite';
+
+function cloudflareSpaPlugin(): Plugin {
+  return {
+    name: 'cloudflare-spa-plugin',
+    closeBundle() {
+      const distDir = path.resolve(__dirname, 'dist');
+      const indexPath = path.join(distDir, 'index.html');
+      if (fs.existsSync(indexPath)) {
+        const targetDir = path.join(distDir, 'zulfarnatalia');
+        if (!fs.existsSync(targetDir)) {
+          fs.mkdirSync(targetDir, { recursive: true });
+        }
+        fs.copyFileSync(indexPath, path.join(targetDir, 'index.html'));
+        fs.copyFileSync(indexPath, path.join(distDir, '404.html'));
+      }
+    },
+  };
+}
 
 export default defineConfig(() => {
   return {
     base: '/',
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), cloudflareSpaPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
