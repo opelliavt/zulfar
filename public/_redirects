@@ -1,0 +1,7 @@
+# Cloudflare Pages Routing
+# Note: Root domain '/' is NOT redirected and remains blank as requested.
+# The wedding invitation is served exclusively on '/zulfarnatalia'.
+/zulfarnatalia /index.html 200
+/zulfarnatalia/ /index.html 200
+/zulfarnatalia/* /index.html 200
+/* /index.html 200
