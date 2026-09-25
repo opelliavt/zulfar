@@ -1,5 +1,5 @@
 import heroFloralBg from '../assets/images/wedding_floral_bg_1790340695740.jpg';
-import weddingSong from '../assets/audio/akad_payuh-teduh.mp3';
+import weddingSong from '../assets/audio/akad_payung-teduh.mp3';
 
 export interface WeddingEvent {
   title: string;
@@ -64,9 +64,8 @@ export const WEDDING_DATA = {
   },
 
   audio: {
-    // Kidung Wahyu Kolosebo (Format MP3 resolusi jernih 128kbps, full version)
     url: weddingSong,
-    title: 'Kidung Wahyu Kolosebo',
+    title: 'Akad - Payung Teduh',
   },
 
   dateTime: {
