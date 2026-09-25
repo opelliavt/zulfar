@@ -62,8 +62,8 @@ export const WEDDING_DATA = {
 
   audio: {
     // Kidung Wahyu Kolosebo (Format MP3 resolusi jernih 128kbps, full version)
-    url: 'http://38.58.179.69:3333/audios/ytaudio_f09ad3099b1409047486db5968ba3a92.mp3', 
-    title: 'Kidung Wahyu Kolosebo',
+    url: '/audio/akad_payung-teduh.mp3', 
+    title: 'Akad',
   },
   
   dateTime: {
