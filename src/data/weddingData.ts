@@ -48,8 +48,8 @@ export const WEDDING_DATA = {
       initial: 'Z',
       father: 'Bpk. Zaenudin Luthfie',
       parentInfo: 'Putra dari Bpk. Zaenudin Luthfie',
-      instagram: 'zulfarmushoffa',
-      instagramUrl: 'https://instagram.com/zulfarmushoffa',
+      instagram: 'zulfaru',
+      instagramUrl: 'https://instagram.com/zulfaru',
     },
     bride: {
       fullName: 'Natalia Mega Selvi',
@@ -57,8 +57,8 @@ export const WEDDING_DATA = {
       initial: 'N',
       father: 'Bpk. Sujud Hariyono',
       parentInfo: 'Putri dari Bpk. Sujud Hariyono',
-      instagram: 'nataliamegaselvi',
-      instagramUrl: 'https://instagram.com/nataliamegaselvi',
+      instagram: 'Nataliaselvi07',
+      instagramUrl: 'https://instagram.com/Nataliaselvi07',
     },
     heroImage: heroFloralBg,
     quote: '"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."',
@@ -67,7 +67,7 @@ export const WEDDING_DATA = {
 
   audio: {
     url: weddingSong, 
-    title: 'Kidung Wahyu Kolosebo',
+    title: 'Akad - Payung Teduh',
   },
   
   dateTime: {
@@ -85,8 +85,8 @@ export const WEDDING_DATA = {
       time: '08.00 - 10.00 WIB',
       venue: 'Kediaman Mempelai Wanita',
       address: 'RT 03 RW 02, Dusun Ngampel, Desa Doroampel, Kec. Sumbergempol, Kab. Tulungagung, Jawa Timur 66291',
-      mapEmbedUrl: 'https://maps.google.com/maps?q=Doroampel,+Sumbergempol,+Tulungagung,+Jawa+Timur&t=&z=15&ie=UTF8&iwloc=&output=embed',
-      mapDirectionUrl: 'https://maps.google.com/?q=Dusun+Ngampel,+Desa+Doroampel,+Kec.+Sumbergempol,+Kab.+Tulungagung',
+      mapEmbedUrl: 'https://maps.google.com/maps?q=-8.104439,111.932977&t=&z=18&ie=UTF8&iwloc=&output=embed',
+      mapDirectionUrl: 'https://www.google.com/maps/search/?api=1&query=-8.104439,111.932977',
       notes: 'Keluarga besar dan kerabat terdekat'
     },
     {
@@ -96,8 +96,8 @@ export const WEDDING_DATA = {
       time: '10.00 WIB - Selesai',
       venue: 'Kediaman Mempelai Wanita',
       address: 'RT 03 RW 02, Dusun Ngampel, Desa Doroampel, Kec. Sumbergempol, Kab. Tulungagung, Jawa Timur 66291',
-      mapEmbedUrl: 'https://maps.google.com/maps?q=Doroampel,+Sumbergempol,+Tulungagung,+Jawa+Timur&t=&z=15&ie=UTF8&iwloc=&output=embed',
-      mapDirectionUrl: 'https://maps.google.com/?q=Dusun+Ngampel,+Desa+Doroampel,+Kec.+Sumbergempol,+Kab.+Tulungagung',
+      mapEmbedUrl: 'https://maps.google.com/maps?q=-8.104439,111.932977&t=&z=18&ie=UTF8&iwloc=&output=embed',
+      mapDirectionUrl: 'https://www.google.com/maps/search/?api=1&query=-8.104439,111.932977',
       notes: 'Kehadiran dan doa restu Bapak/Ibu/Saudara/i merupakan kehormatan bagi kami'
     }
   ] as WeddingEvent[],
